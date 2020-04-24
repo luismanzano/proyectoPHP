@@ -13,36 +13,14 @@
 </head>
 <?php 
 
+include('jobs.php');
+
 $name = "Luis";
 $apellido = "Manzano";
-
-$jobs = [
-    [
-      'title' => 'PHP Developer',
-      'description' => 'This is an awesome job' 
-    ],
-    [
-      'title' => 'Javascript Developer',
-      'description' => 'Este es aun mejor que el anterior'
-    ]
-];
-
-function printJob($job) {
-  echo '<li class = "work-position">';
-  echo '<h5>' .  $jobs[$idx]['title'] . '</h5>';
-  echo '<p>' .  $jobs[$idx]['description'] . '</p>';
-  echo '<strong>Achievements:</strong>';
-  echo '<ul>';
-  echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-  echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-  echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-  echo '</ul>';
-  echo '</li>';
-}
-
-
-
 ?>
+
+
+
 <body>
   <div class="container">
     <div id="resume-header" class="row">
@@ -78,18 +56,19 @@ function printJob($job) {
           <?php
 
                 for($idx = 0; $idx < count($jobs); $idx++){
-              echo '<li class = "work-position">';
-              echo '<h5>' .  $jobs[$idx]['title'] . '</h5>';
-              echo '<p>' .  $jobs[$idx]['description'] . '</p>';
-              echo '<strong>Achievements:</strong>';
-              echo '<ul>';
-              echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              echo '</ul>';
-              echo '</li>';
+              // echo '<li class = "work-position">';
+              // echo '<h5>' .  $jobs[$idx]['title'] . '</h5>';
+              // echo '<p>' .  $jobs[$idx]['description'] . '</p>';
+              // echo '<strong>Achievements:</strong>';
+              // echo '<ul>';
+              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
+              // echo '</ul>';
+              // echo '</li>';
+              
+              printJob($jobs[$idx]);
                 }
-                
                 ?>
           </ul>
         </div>
