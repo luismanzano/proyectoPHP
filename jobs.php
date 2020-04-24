@@ -2,6 +2,7 @@
 
 require('app/Models/Job.php');
 require('app/Models/Project.php');
+require('app/Models/Printable.php')
 
 
 $job1 = new Job('PHP Developer', 'This is an awesome Job');
@@ -29,10 +30,10 @@ $projects = [
 ];
 
 
-function printElement($job) {
+function printElement(Printable $job) {
     echo '<li class = "work-position">';
     echo '<h5>' .  $job->getTitle() . '</h5>';
-    echo '<p>' .  $job->description . '</p>';
+    echo '<p>' .  $job->getDescription() . '</p>';
     echo '<strong>Achievements:</strong>';
     echo '<ul>';
     echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';

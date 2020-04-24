@@ -1,6 +1,6 @@
 <?php
 
-class BaseElement {
+class BaseElement  implements Printable{
     private $title;
     public $description;
     public $visible = true;
