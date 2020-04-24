@@ -56,39 +56,21 @@ $apellido = "Manzano";
           <?php
 
                 for($idx = 0; $idx < count($jobs); $idx++){
-              // echo '<li class = "work-position">';
-              // echo '<h5>' .  $jobs[$idx]['title'] . '</h5>';
-              // echo '<p>' .  $jobs[$idx]['description'] . '</p>';
-              // echo '<strong>Achievements:</strong>';
-              // echo '<ul>';
-              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              // echo '  <li>Lorem ipsum dolor sit amet, 80% consectetuer adipiscing elit.</li>';
-              // echo '</ul>';
-              // echo '</li>';
-              
-              printJob($jobs[$idx]);
+              printElement($jobs[$idx]);
                 }
                 ?>
           </ul>
         </div>
         <div>
             <h3 class="border-bottom-gray">Projects</h3>
-            <div class="project">
-                <h5>Project X</h5>
-                <div class="row">
-                    <div class="col-3">
-                        <img id="profile-picture" src="./Resume_files/saved_resource" alt="">
-                      </div>
-                      <div class="col">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius earum corporis at accusamus quisquam hic quos vel? Tenetur, ullam veniam consequatur esse quod cum, quam cupiditate assumenda natus maiores aperiam.</p>
-                        <strong>Technologies used:</strong>
-                        <span class="badge badge-secondary">PHP</span>
-                        <span class="badge badge-secondary">HTML</span>
-                        <span class="badge badge-secondary">CSS</span>
-                      </div>
-                </div>
-            </div>
+            <ul>
+            
+          <?php
+              for($idx = 0; $idx < count($jobs); $idx++){
+              printElement($projects[$idx]);
+                }
+                ?>
+          </ul>
             <div class="project">
                 <h5>Project X</h5>
                 <div class="row">

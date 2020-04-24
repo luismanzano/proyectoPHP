@@ -1,6 +1,8 @@
 <?php
 
 require('app/Models/Job.php');
+require('app/Models/Project.php');
+
 
 $job1 = new Job('PHP Developer', 'This is an awesome Job');
 
@@ -14,14 +16,20 @@ $job2 = new Job('Javascript developer', 'Este trabajo es aun mejor que el anteri
 
 $job3 = new Job('Android Developer', 'Este trabajo es sumamente lucrativo');
 
+$project1 = new Project('Project1', 'Description');
+
 $jobs = [
     $job1,
     $job2,
     $job3
 ];
 
+$projects = [
+    $project1
+];
 
-function printJob($job) {
+
+function printElement($job) {
     echo '<li class = "work-position">';
     echo '<h5>' .  $job->getTitle() . '</h5>';
     echo '<p>' .  $job->description . '</p>';
