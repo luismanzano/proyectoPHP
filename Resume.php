@@ -66,7 +66,7 @@ $apellido = "Manzano";
             <ul>
             
           <?php
-              for($idx = 0; $idx < count($jobs); $idx++){
+              for($idx = 0; $idx < count($projects); $idx++){
               printElement($projects[$idx]);
                 }
                 ?>

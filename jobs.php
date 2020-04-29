@@ -1,8 +1,8 @@
 <?php
 
-require('app/Models/Job.php');
-require('app/Models/Project.php');
-require('app/Models/Printable.php')
+require_once('app/Models/Job.php');
+require_once('app/Models/Project.php');
+require_once('app/Models/Printable.php');
 
 
 $job1 = new Job('PHP Developer', 'This is an awesome Job');

@@ -1,6 +1,6 @@
 <?php
 
-require_once('app/Models/BaseElement.php');
+require_once('BaseElement.php');
 
 class Job extends BaseElement{
 
